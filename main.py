@@ -2,6 +2,7 @@ from fastapi import FastAPI,UploadFile,Form,Response
 from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
 from fastapi.staticfiles import StaticFiles
+from fastapi_login import LoginManager
 from typing import Annotated
 import sqlite3
 
@@ -10,6 +11,17 @@ cur = con.cursor()
 
 
 app = FastAPI()
+
+
+
+SERCRET = "super-coding"
+manager = LoginManager(SERCRET, '/login')
+
+
+
+
+
+
 
 
 
