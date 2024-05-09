@@ -50,6 +50,7 @@ const renderData = (data) => {
     InfoDiv.appendChild(InfoMetaDiv);
     InfoDiv.appendChild(InfoPriceDiv);
     div.appendChild(InfoDiv);
+    main.appendChild(div);
   });
 };
 
